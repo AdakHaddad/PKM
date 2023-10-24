@@ -1,6 +1,6 @@
 import React from "react";
 import Lottie from "react-lottie"; // Import Lottie
-import animationData from "../public/mental-therapy.json"; // Import your Lottie animation file
+import animationData from "@/public/mental-therapy.json"; // Import your Lottie animation file
 
 const Hero = () => {
   // Lottie options (you can customize these as needed)
