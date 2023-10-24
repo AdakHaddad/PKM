@@ -1,6 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import { FaInstagram, FaFacebook, FaWhatsapp, FaLinkedin } from "react-icons";
+import {
+  FaInstagram,
+  FaFacebook,
+  FaWhatsapp,
+  FaLinkedin,
+} from "react-icons/fa";
 import PKM from "/public/PKM.png";
 import LogoButton from "/public/logo.png"; // Import your logo.png
 
