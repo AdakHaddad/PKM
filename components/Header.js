@@ -19,13 +19,22 @@ function Header() {
             width={30} // Set the width as needed
             height={30} // Set the height as needed
             alt="Logo Button"
-            className=" cursor-pointer" // Add a cursor-pointer for the button effect
+            className=" cursor-pointer mr-2 rounded-xl" // Add a cursor-pointer for the button effect
           />
-          <a href="#" className="text-2xl font-bold">
-            Riset PsyBot
+          <a href="#" className="text-2xl font-sans">
+            PsyBot Research
           </a>
         </div>
-
+        <div className="flex justify-center">
+          <Image
+            src="/UGM.png"
+            width={100}
+            height={100}
+            alt="UGM Logo"
+            className="h-9 w-9 mr-2"
+          />
+          <Image src={PKM} alt="PKM Logo" className=" h-9 w-16 ml-2" />
+        </div>
         <div className="flex space-x-5">
           <a
             href="https://www.instagram.com/psybot_pkmugm"
@@ -56,16 +65,6 @@ function Header() {
             <FaLinkedin />
           </a>
         </div>
-      </div>
-      <div className="flex justify-center">
-        <Image
-          src="/UGM.png"
-          width={100}
-          height={100}
-          alt="UGM Logo"
-          className="h-9 w-9 mr-2"
-        />
-        <Image src={PKM} alt="PKM Logo" className=" h-9 w-16 ml-2" />
       </div>
     </header>
   );
