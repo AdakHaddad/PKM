@@ -1,6 +1,6 @@
-import React from "react";
-import Image from "next/image";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
+import Lottie from "react-lottie";
+import Mental from "../public/mental.json"; // Import your Lottie animation JSON file
 
 const Hero = () => {
   const [isFaded, setIsFaded] = useState(false);
@@ -9,6 +9,15 @@ const Hero = () => {
   useEffect(() => {
     setIsFaded(true);
   }, []);
+
+  const animationOptions = {
+    loop: true, // Set to true if you want the animation to loop
+    autoplay: true, // Set to true to auto-play the animation
+    animationData: Mental, // The JSON data for your Lottie animation
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid meet",
+    },
+  };
 
   return (
     <section
@@ -30,13 +39,7 @@ const Hero = () => {
             Mahasiswa&quot;
           </p>
         </div>
-        <Image
-          src="/positive-mind.png" // Specify the image source
-          alt="Positive Mind" // Add a descriptive alt text
-          width={250} // Set the desired width for mobile screens
-          height={200} // Set the desired height for mobile screens
-          className="mb-6 md:mb-0 md:flex-row" // Add margin for spacing on mobile
-        />
+        <Lottie options={animationOptions} height={500} width={500} />
       </div>
       <footer className="mt-8 text-center">
         &copy; 2023 PsyBot Research Team

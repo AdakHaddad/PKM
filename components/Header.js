@@ -11,7 +11,7 @@ import LogoButton from "/public/logo.png"; // Import your logo.png
 
 function Header() {
   return (
-    <header className="bg-transparent py-4 px-4 md:px-10 text-green-500">
+    <header className="bg-white bg-opacity-20 py-4 px-4 md:px-10 text-green-500">
       <div className="flex flex-col md:flex-row justify-between items-center">
         <div className="flex items-center">
           <Image
@@ -33,9 +33,13 @@ function Header() {
             alt="Universitas Gadjah Mada"
             className="h-9 w-9 mr-2"
           />
-                  <Image src={PKM}
-          width={160}
-            height={90}            alt="PKM Logo" className="h-9 w-16 ml-2" />
+          <Image
+            src={PKM}
+            width={160}
+            height={90}
+            alt="PKM Logo"
+            className="h-9 w-16 ml-2"
+          />
         </div>
         <div className="flex space-x-2 md:space-x-5 mt-4 md:mt-0 text-2xl">
           <a
