@@ -11,14 +11,14 @@ import LogoButton from "/public/logo.png"; // Import your logo.png
 
 function Header() {
   return (
-    <header className="bg-transparent py-4 px-4 md:px-10 text-green-400">
+    <header className="bg-transparent py-4 px-4 md:px-10 text-green-500">
       <div className="flex flex-col md:flex-row justify-between items-center">
         <div className="flex items-center">
           <Image
             src={LogoButton}
             width={30}
             height={30}
-            alt="Logo Button"
+            alt="PKM Center"
             className="cursor-pointer rounded-xl"
           />
           <a href="#" className="text-2xl font-sans">
@@ -30,12 +30,12 @@ function Header() {
             src="/UGM.png"
             width={100}
             height={100}
-            alt="UGM Logo"
+            alt="Universitas Gadjah Mada"
             className="h-9 w-9 mr-2"
           />
           <Image src={PKM} alt="PKM Logo" className="h-9 w-16 ml-2" />
         </div>
-        <div className="flex space-x-2 md:space-x-5 mt-4 md:mt-0">
+        <div className="flex space-x-2 md:space-x-5 mt-4 md:mt-0 text-2xl">
           <a
             href="https://www.instagram.com/psybot_pkmugm"
             target="_blank"
