@@ -33,7 +33,9 @@ function Header() {
             alt="Universitas Gadjah Mada"
             className="h-9 w-9 mr-2"
           />
-          <Image src={PKM} alt="PKM Logo" className="h-9 w-16 ml-2" />
+                  <Image src={PKM}
+          width={160}
+            height={90}            alt="PKM Logo" className="h-9 w-16 ml-2" />
         </div>
         <div className="flex space-x-2 md:space-x-5 mt-4 md:mt-0 text-2xl">
           <a
