@@ -12,7 +12,7 @@ const Hero = () => {
 
   return (
     <section
-      className={`text-green min-h-screen p-4 md:p-10 flex flex-col justify-center items-center ${
+      className={`text-green-700 min-h-screen p-4 md:p-10 flex flex-col justify-center items-center ${
         isFaded ? "opacity-100" : "opacity-0"
       } transition-opacity duration-1000`}
     >
