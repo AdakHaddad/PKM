@@ -1,7 +1,11 @@
 import React from "react";
-import Lottie from "lottie-react";
 import mentalAnimation from "../public/mental.json";
 import { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
+
+const Lottie = dynamic(() => import("lottie-react").then((m) => m.default), {
+  ssr: false,
+});
 
 const Hero = () => {
   const [isFaded, setIsFaded] = useState(false);
