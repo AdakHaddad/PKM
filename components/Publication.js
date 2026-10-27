@@ -29,7 +29,7 @@ const Publication = () => {
             View on Scopus <FaExternalLinkAlt />
           </a>
           <a
-            href="/PsyBot-paper.pdf"
+            href="/Modul PsyBot PKM-RSH 2023.pdf"
             download
             className="inline-flex items-center justify-center gap-2 border-2 border-green-500 px-6 py-3 rounded-lg font-semibold hover:bg-green-500 hover:text-white transition-colors"
           >
